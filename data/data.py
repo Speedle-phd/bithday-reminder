@@ -8,11 +8,11 @@ BIRTHDAY_LIST: list[dict[str:str]] = [
         "context": "work",
     },
     {
-        "fname": "Michaela",
-        "lname": "Weber",
-        "nickname": "Michi",
+        "fname": "Nadine",
+        "lname": "Conrad",
+        "nickname": "Schnuffi",
         "gender": "female",
-        "birthday": "2024-07-14",
+        "birthday": "2024-04-26",
         "context": "partner",
     },
     {
