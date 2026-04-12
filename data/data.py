@@ -96,6 +96,14 @@ BIRTHDAY_LIST: list[dict[str:str]] = [
         "context": "work",
     },
     {
+        "fname": "Sonja",
+        "lname": "Böhlein",
+        "nickname": "Sonja",
+        "gender": "female",
+        "birthday": "2024-03-20",
+        "context": "work",
+    },
+    {
         "fname": "Monika",
         "lname": "Einwich",
         "nickname": "Moni",
