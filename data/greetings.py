@@ -1,5 +1,6 @@
-from random import choice
+from random import choice, seed
 from typing import Callable, Any, TypedDict
+import hashlib
 
 
 class MessageEntry(TypedDict):
@@ -169,6 +170,18 @@ def choose_message(person: dict[str, Any], username: str) -> str:
         for message in MESSAGES_LIST
         if context in message["context"] or "all" in message["context"]
     ]
-    print(len(MESSAGE_LIST))
 
-    return choice(MESSAGE_LIST)(person, username)
+    # Create a unique seed for each username/person combination to ensure different messages
+    # This guarantees different randomization for each user while being deterministic
+    seed_string = f"{username}_{person.get('fname', '')}_{person.get('lname', '')}_{person.get('birthday', '')}"
+    hash_value = int(hashlib.md5(seed_string.encode()).hexdigest()[:8], 16)
+
+    # Use the hash to select a message index, ensuring different users get different messages
+    selected_index = hash_value % len(MESSAGE_LIST)
+    selected_function = MESSAGE_LIST[selected_index]
+
+    print(
+        f"Selected message {selected_index + 1} of {len(MESSAGE_LIST)} for {username}"
+    )
+
+    return selected_function(person, username)
