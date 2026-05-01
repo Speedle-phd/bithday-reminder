@@ -1,16 +1,12 @@
-USERS: list[dict[str:str]] = [
-    {
-        "username": "Emanuel",
-        "email": "shanks-@gmx.de"
-    },
-    {
-        "username": "Nadine",
-        "email": "nadine.conradi@web.de"
-    }
+from typing import Any
+
+USERS: list[dict[str, str]] = [
+    {"username": "Emanuel", "email": "shanks-@gmx.de"},
+    {"username": "Nadine", "email": "nadine.conradi@web.de"},
 ]
 
 
-BIRTHDAY_LIST: list[dict[str:str]] = [
+BIRTHDAY_LIST: list[dict[str, Any]] = [
     {
         "fname": "Franziska",
         "lname": "Häfner",
@@ -18,7 +14,7 @@ BIRTHDAY_LIST: list[dict[str:str]] = [
         "gender": "female",
         "birthday": "2024-01-19",
         "context": "work",
-        "send_to": ["Emanuel"]
+        "send_to": ["Emanuel"],
     },
     {
         "fname": "Emanuel",
@@ -27,7 +23,7 @@ BIRTHDAY_LIST: list[dict[str:str]] = [
         "gender": "male",
         "birthday": "1989-12-22",
         "context": "partner",
-        "send_to": ["Nadine"]
+        "send_to": ["Nadine"],
     },
     {
         "fname": "Nadine",
@@ -36,7 +32,7 @@ BIRTHDAY_LIST: list[dict[str:str]] = [
         "gender": "female",
         "birthday": "2024-04-26",
         "context": "partner",
-        "send_to": ["Emanuel"]
+        "send_to": ["Emanuel"],
     },
     {
         "fname": "Rolf",
@@ -45,7 +41,7 @@ BIRTHDAY_LIST: list[dict[str:str]] = [
         "gender": "male",
         "birthday": "2024-09-27",
         "context": "family",
-        "send_to": ["Emanuel", "Nadine"]
+        "send_to": ["Emanuel", "Nadine"],
     },
     {
         "fname": "Christiane",
@@ -54,7 +50,7 @@ BIRTHDAY_LIST: list[dict[str:str]] = [
         "gender": "female",
         "birthday": "2024-05-27",
         "context": "family",
-        "send_to": ["Emanuel", "Nadine"]
+        "send_to": ["Emanuel", "Nadine"],
     },
     {
         "fname": "Julia",
@@ -63,7 +59,7 @@ BIRTHDAY_LIST: list[dict[str:str]] = [
         "gender": "female",
         "birthday": "2024-08-26",
         "context": "family",
-        "send_to": ["Emanuel", "Nadine"]
+        "send_to": ["Emanuel", "Nadine"],
     },
     {
         "fname": "Katharina",
@@ -72,7 +68,7 @@ BIRTHDAY_LIST: list[dict[str:str]] = [
         "gender": "female",
         "birthday": "2024-09-02",
         "context": "family",
-        "send_to": ["Emanuel", "Nadine"]
+        "send_to": ["Emanuel", "Nadine"],
     },
     {
         "fname": "Christian",
@@ -81,7 +77,7 @@ BIRTHDAY_LIST: list[dict[str:str]] = [
         "gender": "male",
         "birthday": "2024-12-09",
         "context": "family",
-        "send_to": ["Emanuel", "Nadine"]
+        "send_to": ["Emanuel", "Nadine"],
     },
     {
         "fname": "Joseph",
@@ -90,7 +86,7 @@ BIRTHDAY_LIST: list[dict[str:str]] = [
         "gender": "male",
         "birthday": "2024-05-30",
         "context": "family",
-        "send_to": ["Emanuel", "Nadine"]
+        "send_to": ["Emanuel", "Nadine"],
     },
     {
         "fname": "Cornelia",
@@ -99,7 +95,7 @@ BIRTHDAY_LIST: list[dict[str:str]] = [
         "gender": "female",
         "birthday": "2024-06-28",
         "context": "family",
-        "send_to": ["Emanuel", "Nadine"]
+        "send_to": ["Emanuel", "Nadine"],
     },
     {
         "fname": "Daniel",
@@ -108,7 +104,7 @@ BIRTHDAY_LIST: list[dict[str:str]] = [
         "gender": "male",
         "birthday": "2024-03-13",
         "context": "family",
-        "send_to": ["Emanuel", "Nadine"]
+        "send_to": ["Emanuel", "Nadine"],
     },
     {
         "fname": "Jonas",
@@ -117,7 +113,7 @@ BIRTHDAY_LIST: list[dict[str:str]] = [
         "gender": "male",
         "birthday": "2024-06-15",
         "context": "friends",
-        "send_to": ["Emanuel"]
+        "send_to": ["Emanuel"],
     },
     {
         "fname": "Jessica",
@@ -126,7 +122,7 @@ BIRTHDAY_LIST: list[dict[str:str]] = [
         "gender": "female",
         "birthday": "2024-08-28",
         "context": "work",
-        "send_to": ["Emanuel"]
+        "send_to": ["Emanuel"],
     },
     {
         "fname": "Sonja",
@@ -135,7 +131,7 @@ BIRTHDAY_LIST: list[dict[str:str]] = [
         "gender": "female",
         "birthday": "2024-03-20",
         "context": "work",
-        "send_to": ["Emanuel"]
+        "send_to": ["Emanuel"],
     },
     {
         "fname": "Monika",
@@ -144,15 +140,15 @@ BIRTHDAY_LIST: list[dict[str:str]] = [
         "gender": "female",
         "birthday": "2024-12-14",
         "context": "friends",
-        "send_to": ["Emanuel"]
+        "send_to": ["Emanuel"],
     },
     {
         "fname": "Test",
         "lname": "Test",
         "nickname": "Test",
         "gender": "male",
-        "birthday": "2024-05-01",
+        "birthday": "1989-05-01",
         "context": "friends",
-        "send_to": ["Emanuel", "Nadine"]
-    }
+        "send_to": ["Emanuel", "Nadine"],
+    },
 ]
