@@ -1,0 +1,41 @@
+2026-05-03 05:19:58,944 - INFO - Starting birthday reminder application
+2026-05-03 05:19:58,949 - ERROR - Missing required environment variables: EMAIL and/or EMAIL_PW
+2026-05-03 05:19:58,949 - ERROR - Environment validation failed. Aborting birthday check.
+2026-05-03 05:19:58,949 - INFO - Birthday reminder application completed with no birthdays processed
+2026-05-03 05:28:25,908 - INFO - Starting birthday reminder application
+2026-05-03 05:28:25,908 - INFO - Checking birthdays for 2026-05-03
+2026-05-03 05:28:25,927 - INFO - Birthday found for Robi Schnuffison
+2026-05-03 05:28:25,927 - INFO - Robi Schnuffison is turning 37 years old today!
+2026-05-03 05:28:25,927 - INFO - Attempting to send birthday reminder for Robi Schnuffison to 1 recipients
+2026-05-03 05:28:26,160 - ERROR - SMTP Authentication failed: (535, b'Authentication credentials invalid')
+2026-05-03 05:28:26,160 - INFO - Attempting to send birthday reminder for Robi Schnuffison to 1 recipients
+2026-05-03 05:28:26,397 - ERROR - SMTP Authentication failed: (535, b'Authentication credentials invalid')
+2026-05-03 05:28:26,397 - ERROR - Failed to send any personalized birthday reminders for Robi Schnuffison
+2026-05-03 05:28:26,397 - INFO - Birthday check completed. Processed 16 people, sent reminders for 0 birthdays.
+2026-05-03 05:28:26,397 - INFO - Birthday reminder application completed with no birthdays processed
+2026-05-03 05:29:08,091 - INFO - Starting birthday reminder application
+2026-05-03 05:29:08,092 - INFO - Checking birthdays for 2026-05-03
+2026-05-03 05:29:08,121 - INFO - Birthday found for Robi Schnuffison
+2026-05-03 05:29:08,121 - INFO - Robi Schnuffison is turning 37 years old today!
+2026-05-03 05:29:08,121 - INFO - Attempting to send birthday reminder for Robi Schnuffison to 1 recipients
+2026-05-03 05:29:08,339 - ERROR - SMTP Authentication failed: (535, b'Authentication credentials invalid')
+2026-05-03 05:29:08,340 - INFO - Attempting to send birthday reminder for Robi Schnuffison to 1 recipients
+2026-05-03 05:29:08,583 - ERROR - SMTP Authentication failed: (535, b'Authentication credentials invalid')
+2026-05-03 05:29:08,583 - ERROR - Failed to send any personalized birthday reminders for Robi Schnuffison
+2026-05-03 05:29:08,583 - INFO - Birthday check completed. Processed 16 people, sent reminders for 0 birthdays.
+2026-05-03 05:29:08,583 - INFO - Birthday reminder application completed with no birthdays processed
+2026-05-03 05:29:53,022 - INFO - Starting birthday reminder application
+2026-05-03 05:29:53,022 - INFO - Checking birthdays for 2026-05-03
+2026-05-03 05:29:53,037 - INFO - Birthday found for Robi Schnuffison
+2026-05-03 05:29:53,037 - INFO - Robi Schnuffison is turning 37 years old today!
+2026-05-03 05:29:53,037 - INFO - Attempting to send birthday reminder for Robi Schnuffison to 1 recipients
+2026-05-03 05:29:53,396 - INFO - Successfully sent birthday reminder for Robi Schnuffison to Emanuel (shanks-@gmx.de)
+2026-05-03 05:29:53,410 - INFO - Successfully sent 1/1 emails for Robi Schnuffison
+2026-05-03 05:29:53,411 - INFO - Personalized birthday reminder sent to Emanuel for Robi Schnuffison
+2026-05-03 05:29:53,411 - INFO - Attempting to send birthday reminder for Robi Schnuffison to 1 recipients
+2026-05-03 05:29:53,680 - INFO - Successfully sent birthday reminder for Robi Schnuffison to Nadine (nadine.conradi@web.de)
+2026-05-03 05:29:53,693 - INFO - Successfully sent 1/1 emails for Robi Schnuffison
+2026-05-03 05:29:53,694 - INFO - Personalized birthday reminder sent to Nadine for Robi Schnuffison
+2026-05-03 05:29:53,694 - INFO - Birthday reminder processing completed for Robi Schnuffison (age 37) - sent to 2/2 recipients
+2026-05-03 05:29:53,694 - INFO - Birthday check completed. Processed 16 people, sent reminders for 1 birthdays.
+2026-05-03 05:29:53,694 - INFO - Birthday reminder application completed successfully

@@ -1,3 +1,6 @@
 #!/bin/bash
 
-docker build -t birthday_reminder:latest . && docker run --rm -it -v ./log:/app/log birthday_reminder:latest && docker rmi birthday_reminder:latest
+# Build and run the birthday reminder application
+docker build -t birthday_reminder:latest /docker/birthday_reminder && \
+docker run --rm -it -v /docker/birthday_reminder/log:/app/log birthday_reminder:latest && \
+docker rmi birthday_reminder:latest

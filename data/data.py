@@ -147,7 +147,7 @@ BIRTHDAY_LIST: list[dict[str, Any]] = [
         "lname": "Schnuffison",
         "nickname": "Robster",
         "gender": "male",
-        "birthday": "1989-05-03",
+        "birthday": "1989-05-04",
         "context": "friends",
         "send_to": ["Emanuel", "Nadine"],
     },

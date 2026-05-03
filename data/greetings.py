@@ -29,7 +29,7 @@ def function4(person: dict[str, Any], username: str):
 
 
 def function5(person: dict[str, Any], username: str):
-    _, lname, _, gender, _, _ = person.values()
+    _, lname, _, gender, *_ = person.values()
     return f"Grüße Sie, werter Jubeljubilar, namentlich {"Mister" if gender == "male" else "Misses"} {lname}.\n\nZu Ihrem glorreichen, epischen und denkwürdigen Geburtstag wünsche ich ein weiteres Jahr voller packender Abenteuer, glückseligen Erlebnissen und verwüstungsresistenter Gesundheit.\n\nLiebe Grüße und alles Gute zum Geburtstag.\n\nWünscht Ihnen {username}"
 
 
@@ -171,17 +171,6 @@ def choose_message(person: dict[str, Any], username: str) -> str:
         if context in message["context"] or "all" in message["context"]
     ]
 
-    # Create a unique seed for each username/person combination to ensure different messages
-    # This guarantees different randomization for each user while being deterministic
-    seed_string = f"{username}_{person.get('fname', '')}_{person.get('lname', '')}_{person.get('birthday', '')}"
-    hash_value = int(hashlib.md5(seed_string.encode()).hexdigest()[:8], 16)
-
-    # Use the hash to select a message index, ensuring different users get different messages
-    selected_index = hash_value % len(MESSAGE_LIST)
-    selected_function = MESSAGE_LIST[selected_index]
-
-    print(
-        f"Selected message {selected_index + 1} of {len(MESSAGE_LIST)} for {username}"
-    )
+    selected_function = choice(MESSAGE_LIST)  # Randomly select a message from the filtered list
 
     return selected_function(person, username)
